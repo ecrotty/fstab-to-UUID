@@ -1,10 +1,16 @@
 #!/bin/bash
 
 # Script: fstab-to-UUID.sh
+# Copyright (c) 2024, Ed Crotty (ecrotty@edcrotty.com)
+# License: BSD 3-Clause License
+#
 # Description: Converts only /dev/sd* device paths in /etc/fstab to their corresponding UUID format.
 # Strictly processes only standard SCSI/SATA disk devices (/dev/sd*) while preserving all other entries.
 # This script can operate in dry-run mode to preview changes or write mode to apply them.
 # The script creates a backup before making any changes to /etc/fstab.
+#
+# Repository: https://github.com/ecrotty/fstab-to-UUID
+#
 # Usage: Run with --help for usage information
 
 # Display usage and help information
